@@ -14,6 +14,7 @@
 		5C2E86E71CD25C1B00B03BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2E86E51CD25C1B00B03BDD /* LaunchScreen.storyboard */; };
 		5C2E86F21CD25C1B00B03BDD /* shushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E86F11CD25C1B00B03BDD /* shushTests.swift */; };
 		5C2E86FD1CD25C1B00B03BDD /* shushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E86FC1CD25C1B00B03BDD /* shushUITests.swift */; };
+		5C2E870B1CD25C3300B03BDD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2E870A1CD25C3300B03BDD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5C2E86F81CD25C1B00B03BDD /* shushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2E86FC1CD25C1B00B03BDD /* shushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shushUITests.swift; sourceTree = "<group>"; };
 		5C2E86FE1CD25C1B00B03BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2E870A1CD25C3300B03BDD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2E870B1CD25C3300B03BDD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		5C2E86D01CD25C1B00B03BDD = {
 			isa = PBXGroup;
 			children = (
+				5C2E870A1CD25C3300B03BDD /* CoreLocation.framework */,
 				5C2E86DB1CD25C1B00B03BDD /* shush */,
 				5C2E86F01CD25C1B00B03BDD /* shushTests */,
 				5C2E86FB1CD25C1B00B03BDD /* shushUITests */,
@@ -193,6 +197,11 @@
 				TargetAttributes = {
 					5C2E86D81CD25C1B00B03BDD = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					5C2E86EC1CD25C1B00B03BDD = {
 						CreatedOnToolsVersion = 7.3;
